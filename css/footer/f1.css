@@ -1,0 +1,107 @@
+/*=======================================================
+                  More Case Study Footer
+=======================================================*/
+
+.footer-more-cases {
+   width: 91%;
+   max-width: 91%;
+   margin: 4vh 0;
+   padding: 0 4.5%;
+
+   display: grid;
+   grid-template: auto 15vh 15vh 15vh / 1fr;
+   grid-gap: 4vmin;
+   grid-template-areas:
+   "more-cases-label"
+   "ktp"
+   "wis"
+   "dotus";
+}
+
+.more-cases {
+   border-radius: 5px;
+}
+
+.footer-more-cases > h3 {
+   grid-area: more-cases-label;
+   place-self: center start;
+}
+
+#more-cases-ktp {
+   background-color: #C8BED5;
+   grid-area: ktp;
+}
+
+/* #more-cases-sit {
+   background-color: #e5c5da;
+   grid-area: sitterfix;
+} */
+
+#more-cases-wsh {
+   background-color: #f4dc76;
+   grid-area: wis;
+}
+
+#more-cases-dot {
+   background-color: #a3d0fe;
+   grid-area: dotus;
+}
+
+.footer-more-cases .more-cases .mc-overlay {
+   height: 100%;
+   width: 100%;
+   text-align: center;
+
+   display: grid;
+   grid: 1fr / 1fr;
+
+   background-image: linear-gradient(rgba(28, 28, 28, 0), rgba(28, 28, 28, 0.1));
+}
+
+.footer-more-cases .more-cases .mc-overlay img {
+   grid-column: 1 / 2;
+   grid-row: 1 / 2;
+   place-self: center center;
+   max-width: 60%;
+}
+
+@media screen and (min-width: 1024px) {
+
+   /*=======================================================
+                        More Case Study Footer
+   =======================================================*/
+
+   .footer-more-cases {
+      width: 100%;
+      max-width: 100%;
+      height: calc(2em + 15vh);
+      margin: 8vh 0 5vh;
+      padding: 0;
+
+      display: grid;
+      grid-template: auto 1fr / repeat(12, 1fr);
+      grid-gap: 3vmin 2vmin;
+      grid-template-areas:
+      ". . . more-cases-label more-cases-label more-cases-label more-cases-label more-cases-label more-cases-label . . ."
+      ". . . ktp ktp wis wis dotus dotus . . .";
+   }
+
+   .footer-more-cases .more-cases {
+      box-shadow: 0 0 0px rgba(28, 28, 28, 0);
+      transition: transform 0.4s, box-shadow 0.4s;
+   }
+
+   .footer-more-cases .more-cases:hover {
+      box-shadow: 0 2px 10px rgba(28, 28, 28, 0.2);
+      transform: translateY(-1vmin);
+   }
+
+   .footer-more-cases .more-cases .mc-overlay {
+      background-image: linear-gradient(rgba(28, 28, 28, 0), rgba(28, 28, 28, 0.25));
+   }
+
+   .footer-more-cases .more-cases .mc-overlay img {
+      max-width: 80%;
+   }
+
+}

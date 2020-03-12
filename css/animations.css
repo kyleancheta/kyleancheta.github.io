@@ -1,0 +1,55 @@
+/*===============================================
+                Bio Glitch Animation
+===============================================*/
+
+#heading-bio-1 {
+   animation-name: glitchy;
+   animation-duration: 0.25s;
+   animation-iteration-count: 1;
+   animation-delay: 5s;
+}
+
+#heading-bio-2 {
+   animation-name: glitchy;
+   animation-duration: 0.75s;
+   animation-iteration-count: 1;
+   animation-delay: 5s;
+}
+
+#heading-bio-3 {
+   animation-name: glitchy;
+   animation-duration: 0.5s;
+   animation-iteration-count: 1;
+   animation-delay: 5s;
+}
+
+@keyframes glitchy {
+   0% {
+      opacity: 0.25;
+      transform: rotate(30deg), translateX(2vw);
+   }
+   25% {
+      transform: scale(1.1), skewY(40vh), translateX(-2vw);
+
+   }
+   50% {
+      opacity: 0.75;
+      transform: skewX(30vw);
+      transform: translateX(2vw);
+   }
+   60% {
+      transform: scale(0.85);
+      transform: skewX(-35vw);
+      transform: skewY(-20vh);
+      opacity: 0.25;
+      transform: translateX(-2vw);
+   }
+   75% {
+      transform: rotate(-45deg), translateX(2vw);
+   }
+   100% {
+      transform: translateX(-2vw);
+      opacity: 0;
+      display: none;
+   }
+}

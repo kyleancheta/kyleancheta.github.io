@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!-- WISHES INPUT -->
+
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+      <title>Blank App</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/wishes_sigs.css">
+      <script src="js/jquery-2.2.4.min.js"></script>
+   </head>
+   <body>
+      <a id="go-back" href="wishes_confirm.html">BACK</a>
+      <form method="POST">
+         <!-- One "tab" for each step in the form: -->
+         <div class="tab">
+            <h1>MY SIGNATURE</h1>
+            <p>entering your name below acts as your legal digital signature</p>
+            <p><input id="user-signature" placeholder="Enter your full legal name" oninput="this.className = ''"></p>
+         </div>
+         <div class="tab">
+            <h1>WITNESS 1 SIGNATURE</h1>
+            <p>entering your name below acts as your legal digital signature</p>
+            <p><input id="witness1-signature" placeholder="Enter your full legal name" oninput="this.className = ''"></p>
+         </div>
+         <div class="tab">
+            <h1>WITNESS 2 SIGNATURE</h1>
+            <p>entering your name below acts as your legal digital signature</p>
+            <p><input id="witness2-signature" placeholder="Enter your full legal name" oninput="this.className = ''"></p>
+         </div>
+         <div class="tab">
+            <h1 class="white-text">STOP</h1>
+            <p id="final-text">you are about to create a legally binding document. by clicking
+               the submit button, you are consenting to these wishes being made official.
+            </p>
+         </div>
+         <div class="prog-buttons" style="overflow:auto;">
+            <div style="text-align: center">
+               <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+               <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+         </div>
+         <!-- Circles which indicates the steps of the form: -->
+         <div id="steps" style="text-align:center">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+         </div>
+      </form>
+
+      <script src="js/signatures.js"></script>
+   </body>
+</html>

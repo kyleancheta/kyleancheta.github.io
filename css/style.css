@@ -1,0 +1,394 @@
+/*=======================================================
+       Kyle Ancheta Portfolio Site - Base Styling
+=======================================================*/
+
+* {
+   text-decoration: none;
+}
+
+html, body {
+   font-size: 100%; /* 16px */
+   font-family: 'Barlow', sans-serif;
+   background-color: #FAFAFA;
+   scroll-behavior: smooth;
+   overflow-x: hidden;
+}
+
+h1 {
+   font-size: 3em;
+   font-weight: 800; /* ExtraBold */
+   color: #1C1C1C;
+}
+
+h2 {
+   font-size: 2.5em;
+   font-family: 'Barlow Condensed', sans-serif;
+   font-style: italic;
+   font-weight: 500; /* Condensed Medium Italic */
+   color: #1C1C1C;
+}
+
+h3 {
+   font-size: 1.5em;
+   font-family: 'Barlow Condensed', sans-serif;
+   font-weight: 400; /* Regular Condensed */
+   color: #1C1C1C;
+}
+
+h4 {
+   font-size: 1.25rem;
+   font-family: 'Barlow Condensed', sans-serif;
+   font-style: italic;
+   font-weight: 400; /* Condensed Medium Italic */
+   color: #1C1C1C;
+}
+
+p {
+   font-family: 'Lora', Georgia, "Times New Romans", serif;
+   font-size: 1em;
+   line-height: 1.5em;
+   font-weight: 400;
+   color: #1C1C1C;
+   opacity: 0.85;
+}
+
+p a {
+   text-decoration: underline;
+}
+
+blockquote {
+   font-size: 1.5em;
+   line-height: 1.5em;
+   font-family: 'Barlow Condensed', sans-serif;
+   font-style: italic;
+   text-align: center;
+   font-weight: 500; /* Condensed Medium Italic */
+   color: #1C1C1C;
+}
+
+a {
+   color: #1C1C1C;
+}
+
+table {
+   font-size: 0.875em;
+   font-family: 'Barlow Condensed', sans-serif;
+   font-weight: 400; /* Regular Condensed */
+   color: #1C1C1C;
+   text-align: left;
+   border-spacing: 3vmin;
+   border-collapse: collapse;
+   padding: 2px;
+   border: solid 1px #1C1C1C;
+}
+
+table, th, td {
+   padding: 10px;
+}
+
+th {
+   font-weight: normal;
+}
+
+table tr:first-child {
+   border-bottom: solid 1px #1C1C1C;
+   margin-bottom: 10vmin;
+}
+
+table.project-info {
+   border: none;
+   font-size: 1.25em;
+}
+
+table.project-info tr:first-child {
+   border-bottom: none;
+}
+
+table.project-info tr {
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+table.project-info tr td:first-child {
+   padding-left: 8vmax;
+   text-transform: uppercase;
+   font-weight: 500;
+}
+
+table.project-info td {
+   padding-top: 1.5vmin;
+   padding-bottom: 1.5vmin;
+}
+
+table.project-info tr td:nth-child(2) {
+   padding-left: 4px;
+   font-size: 0.875em;
+}
+
+a#hello-there {
+   color: #1C1C1C;
+}
+
+h1#about-title {
+   font-size: 3em;
+   color: #FAFAFA;
+}
+
+h3#heading-bio {
+   font-size: 1.25em;
+   line-height: 1.25em;
+}
+
+h3.nav-item {
+   font-size: 1.5em;
+   text-align: center;
+   cursor: pointer;
+}
+
+/* h4.case-study-subtitle {
+   color: #1C1C1C;
+} */
+
+.case-study h1 {
+   font-size: 2.25em;
+   text-align: center;
+   color: #FAFAFA;
+}
+
+.case-study h4 {
+   color: #FAFAFA;
+}
+
+.case-study h4.black-mobi {
+   color: #1C1C1C;
+}
+
+p.case-study-tags {
+   font-family: 'Barlow Condensed', sans-serif;
+   font-weight: 400; /* Regular Condensed */
+   color: #FAFAFA;
+}
+
+p.case-study-tags.black-mobi {
+   color: #1C1C1C;
+}
+
+#general-kenobi {
+   opacity: 0;
+   font-weight: 800;
+}
+
+#copyright {
+   font-family: 'Barlow', sans-serif;
+}
+
+/*===============================================
+               Mobile Landscape View
+===============================================*/
+
+@media screen and (min-width: 568px) and (min-aspect-ratio: 5/4) {
+
+   h1 {
+      font-size: 3.5em;
+   }
+
+   table {
+      font-size: 1.125em;
+   }
+
+   h1#about-title {
+      font-size: 3em;
+      color: #1C1C1C;
+   }
+
+   .case-study h1 {
+      font-size: 1.5em;
+   }
+
+}
+
+/*===============================================
+                  Tablet View
+===============================================*/
+
+@media screen and (min-width: 768px) {
+
+   h1 {
+      font-size: 4em;
+   }
+
+   h2 {
+      font-size: 3em;
+   }
+
+   h3 {
+      font-size: 2em;
+   }
+
+   p {
+      font-size: 1.25em;
+   }
+
+   table {
+      font-size: 1.5em;
+      border: solid 2px #1C1C1C;
+   }
+
+   table tr:first-child {
+      border-bottom: solid 2px #1C1C1C;
+   }
+
+   h1#about-title {
+      font-size: 4em;
+      color: #1C1C1C;
+   }
+
+   h3#heading-bio {
+      font-size: 1.375em;
+      line-height: 1.375em;
+   }
+
+   h3.nav-item {
+      font-size: 1.625em;
+   }
+
+   .case-study h1 {
+      font-size: 1.75em;
+   }
+
+}
+
+/*===============================================
+   Long (e.g. iPhone X/XS) Mobile Landscape View
+===============================================*/
+
+@media screen and (min-width: 768px) and (min-aspect-ratio: 5/3) {
+
+   h3#heading-bio {
+      font-size: 1.5em;
+      line-height: 1.5em;
+   }
+
+   h3.nav-item {
+      font-size: 1em;
+   }
+
+}
+
+/*===============================================
+            Laptop / Small Desktop View
+===============================================*/
+
+@media screen and (min-width: 1024px) and (min-aspect-ratio: 5/4) {
+
+   h1#about-title {
+      font-size: 3.125em;
+   }
+
+   .case-study h1 {
+      font-size: 2em;
+   }
+
+   p {
+      font-size: 1em;
+   }
+}
+
+/*===============================================
+                  Desktop View
+===============================================*/
+
+@media screen and (min-width: 1344px) and (min-aspect-ratio: 5/4) {
+
+   /*===============================================
+                     Basic Styling
+   ===============================================*/
+
+   html, body {
+      font-size: 112.5%; /* 18px */
+   }
+
+   h1 {
+      font-size: 5em;
+   }
+
+   h2 {
+      font-size: 4em;
+   }
+
+   h3 {
+      font-size: 2em;
+   }
+
+   h3.nav-item {
+      font-size: 1.25em;
+   }
+
+   p {
+      font-size: 1em;
+   }
+
+   table {
+      font-size: 1.25em;
+   }
+
+   table.project-info {
+      font-size: 1.75em;
+   }
+
+   table.project-info tr {
+      padding-top: 10px;
+      padding-bottom: 10px;
+   }
+
+   /* table.project-info tr td:nth-child(2) {
+      font-size: 1em;
+   } */
+
+   h1#about-title {
+      font-size: 3.5em;
+   }
+
+   h3#heading-bio {
+      font-size: 1.75em;
+      line-height: 1.5em;
+   }
+
+   .case-study h1 {
+      font-size: 2.5em;
+   }
+
+   p.case-study-tags.black-mobi {
+      color: #FAFAFA;
+   }
+
+   .case-study h4.black-mobi {
+      color: #FAFAFA;
+   }
+
+}
+
+@media screen and (min-width: 1600px) {
+
+   h1#about-title {
+      font-size: 4.5em;
+   }
+
+   h3#heading-bio {
+      font-size: 2em;
+      line-height: 1.5em;
+   }
+
+   p {
+      font-size: 1.125em;
+   }
+
+   p#about-text, p#copyright {
+      font-size: 1em;
+   }
+
+   table {
+      font-size: 1.5em;
+   }
+
+}
