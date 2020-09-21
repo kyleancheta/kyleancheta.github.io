@@ -82,7 +82,6 @@ img {
 
 .content {
    margin-top: 24px;
-   max-width: 100%;
    width: calc(100% - 64px);
    max-width: calc(100% - 64px);
    padding: 0 32px 0;
