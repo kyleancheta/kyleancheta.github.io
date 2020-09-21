@@ -1,0 +1,420 @@
+@import "colors.css";
+
+/*=======================================================
+    Kyle Ancheta Portfolio Site - Case Study Template
+=======================================================*/
+
+.wrap {
+   max-width: 100%;
+   width: 100%;
+   margin: 0 auto;
+   background-color: var(--white-2);
+}
+
+img {
+   max-width: 100%;
+}
+
+/*=======================================================
+                     Buttons Controls
+=======================================================*/
+
+.cs-close {
+   z-index: 3;
+   width: 32px;
+   height: 32px;
+   background: var(--white-2) url("../img/icon/close-icon.png") center/cover no-repeat;
+   border-radius: 16px;
+   box-shadow: 0 0 4px rgba(28, 28, 28, 0.35);
+
+   position: fixed;
+   top: 24px;
+   right: 24px;
+
+   transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.cs-close:hover {
+   box-shadow: 0 2px 8px rgba(28, 28, 28, 0.55);
+   transform: scale(1.05);
+}
+
+.cs-close:active {
+   box-shadow: 0 0 6px rgba(28, 28, 28, 0.35);
+   transition: box-shadow 0.25s;
+}
+
+
+.cs-up {
+   z-index: 3;
+   width: 32px;
+   height: 32px;
+   background: var(--white-2) url("../img/icon/up-icon.png") center/cover no-repeat;
+   border-radius: 16px;
+   box-shadow: 0 0 4px rgba(28, 28, 28, 0.35);
+
+   position: fixed;
+   bottom: 24px;
+   right: 24px;
+
+   transition: box-shadow 0.25s, transform 0.25s;
+
+   display: none;
+}
+
+.cs-up:hover {
+   box-shadow: 0 2px 8px rgba(28, 28, 28, 0.55);
+   transform: scale(1.05);
+}
+
+.cs-up:active {
+   box-shadow: 0 0 6px rgba(28, 28, 28, 0.35);
+   transition: box-shadow 0.25s;
+}
+
+/* .cs-close:focus, .cs-up:focus {
+   box-shadow: 0 2px 4px rgba(168, 198, 240, 0.55);
+} */
+
+/*=======================================================
+                    Case Study Layout
+=======================================================*/
+
+.content {
+   margin-top: 24px;
+   max-width: 100%;
+   width: calc(100% - 64px);
+   max-width: calc(100% - 64px);
+   padding: 0 32px 0;
+   z-index: -1;
+
+   display: grid;
+   grid-gap: 8px;
+   grid-template: auto / 1fr;
+}
+
+.content h1 {
+   grid-column: 1 / 2;
+   place-self: center start;
+   margin: 24px 0 16px;
+}
+
+.content h2 {
+   grid-column: 1 / 2;
+   place-self: center start;
+   margin: 20px 0 12px;
+}
+
+.content h3 {
+   grid-column: 1 / 2;
+   place-self: center start;
+   margin: 16px 0 12px;
+}
+
+.content h4 {
+   grid-column: 1 / 2;
+   place-self: center start;
+   margin: 12px 0 12px;
+}
+
+.content ul, .content ol {
+   grid-column: 1 / 2;
+   place-self: center start;
+   margin: 8px 0 8px 40px;
+}
+
+.content ul.list-links {
+   margin-left: 0px;
+}
+
+.content ul li, .content ol li {
+   margin: 8px 0;
+}
+
+.content p {
+   grid-column: 1 / 2;
+   place-self: center start;
+   margin: 16px 0 12px;
+}
+
+.content label {
+   grid-column: 1 / 2;
+   place-self: center start;
+   margin: 0 0 12px;
+}
+
+.content table {
+   grid-column: 1 / 2;
+   place-self: center start;
+   margin: 16px 0 12px;
+}
+
+.content blockquote {
+   grid-column: 1 / 2;
+   place-self: center center;
+   margin: 20px 0 20px;
+}
+
+.content img {
+   grid-column: 1 / 2;
+   place-self: center center;
+   margin: 16px 0 12px;
+}
+
+.content img.with-label {
+   margin: 16px 0 4px;
+}
+
+.content hr {
+   grid-column: 1 / 2;
+   /* place-self: center center; */
+   margin: 16px 0 16px;
+   /* border-top: 2px solid var(--grey-1); */
+}
+
+.content section.bottom-spacer {
+   grid-column: 1 / 2;
+   height: 56px;
+}
+
+/*=======================================================
+               Tablets View
+=======================================================*/
+
+@media screen and (min-width: 568px) {
+   .content {
+      width: calc(100% - 96px);
+      padding: 0 48px 0;
+   }
+}
+
+/*=======================================================
+               Tablets View
+=======================================================*/
+
+@media screen and (min-width: 768px) {
+
+   /*=======================================================
+                       Case Study Content
+   =======================================================*/
+
+   .content {
+      margin-top: 32px;
+      width: calc(100% - 64px);
+      padding: 0 32px 0;
+
+      grid-gap: 16px;
+      grid-template: auto / 1fr 648px 1fr;
+   }
+
+   .content h1 {
+      grid-column: 2 / 3;
+   }
+
+   .content h2 {
+      grid-column: 2 / 3;
+   }
+
+   .content h3 {
+      grid-column: 2 / 3;
+   }
+
+   .content h4 {
+      grid-column: 2 / 3;
+   }
+
+   .content ul, .content ol {
+      grid-column: 2 / 3;
+   }
+
+   .content p {
+      grid-column: 2 / 3;
+   }
+
+   .content label {
+      grid-column: 2 / 3;
+   }
+
+   .content table {
+      grid-column: 2 / 3;
+   }
+
+   .content blockquote {
+      grid-column: 2 / 3;
+   }
+
+   .content img {
+      grid-column: 2 / 3;
+   }
+
+   .content hr {
+      grid-column: 2 / 3;
+   }
+
+   .content section.bottom-spacer {
+      grid-column: 2 / 3;
+   }
+
+}
+
+/*=======================================================
+               Tablets View
+=======================================================*/
+
+@media screen and (min-width: 1024px) {
+
+   .cs-close {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+
+      top: 32px;
+      right: 32px;
+   }
+
+   .cs-up {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+
+      bottom: 32px;
+      right: 32px;
+   }
+
+   /*=======================================================
+                       Case Study Content
+   =======================================================*/
+
+   .content {
+      margin-top: 48px;
+      width: calc(100% - 80px);
+      padding: 0 40px 0;
+
+      display: grid;
+      grid-gap: 0;
+      grid-template: auto / 1fr 648px 1fr;
+   }
+
+   .content h1 {
+      grid-column: 2 / 3;
+      margin: 32px 0 20px;
+   }
+
+   .content h2 {
+      grid-column: 2 / 3;
+      margin: 24px 0 16px;
+   }
+
+   .content h3 {
+      grid-column: 2 / 3;
+      margin: 20px 0 16px;
+   }
+
+   .content h4 {
+      grid-column: 2 / 3;
+      margin: 16px 0 16px;
+   }
+
+   .content ul, .content ol {
+      grid-column: 2 / 3;
+      margin: 16px 0 16px 56px;
+   }
+
+   .content ul li, .content ol li {
+      margin: 16px 0;
+   }
+
+   .content p {
+      grid-column: 2 / 3;
+      margin: 20px 0 16px;
+   }
+
+   .content label {
+      grid-column: 2 / 3;
+      margin: 0 0 16px;
+   }
+
+   .content table {
+      grid-column: 2 / 3;
+      margin: 24px 0 16px;
+   }
+
+   .content blockquote {
+      grid-column: 2 / 3;
+      margin: 32px 0 32px;
+   }
+
+   .content img {
+      grid-column: 2 / 3;
+      margin: 20px 0 16px;
+   }
+
+   .content img.with-label {
+      margin: 20px 0 8px;
+   }
+
+   .content hr {
+      grid-column: 2 / 3;
+      margin: 20px 0 20px;
+      border-top: 3px solid var(--grey-1);
+   }
+
+   .content section.bottom-spacer {
+      grid-column: 2 / 3;
+      height: 72px;
+   }
+}
+
+/*=======================================================
+                     Desktop View
+=======================================================*/
+
+@media screen and (min-width: 1440px) {
+
+
+   .cs-close {
+      width: 48px;
+      height: 48px;
+      border-radius: 24px;
+
+      top: 40px;
+      right: 40px;
+   }
+
+   .cs-up {
+      width: 48px;
+      height: 48px;
+      border-radius: 24px;
+
+      bottom: 40px;
+      right: 40px;
+   }
+
+   /*=======================================================
+                       Case Study Content
+   =======================================================*/
+
+}
+
+/*=======================================================
+                     Big Desktop View
+=======================================================*/
+
+@media screen and (min-width: 1800px) {
+
+   .content {
+      margin-top: 56px;
+      width: calc(100% - 120px);
+      padding: 0 60px 0;
+      grid-template: auto / 1fr 800px 1fr;
+   }
+
+   .content table {
+      margin: 32px 0 32px;
+   }
+
+   .content ul, .content ol {
+      grid-column: 2 / 3;
+      margin: 16px 0 16px 72px;
+   }
+}

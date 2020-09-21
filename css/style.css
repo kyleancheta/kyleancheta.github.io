@@ -2,207 +2,162 @@
        Kyle Ancheta Portfolio Site - Base Styling
 =======================================================*/
 
+@import "fonts/fonts.css";
+@import "colors.css";
+
 * {
    text-decoration: none;
 }
 
+::selection {
+   background: var(--black-1);
+   color: var(--white-1);
+}
+
+:focus {
+   background: var(--blue-200);
+   padding: 4px;
+   border-radius: 2px;
+   outline: 0;
+}
+
 html, body {
    font-size: 100%; /* 16px */
-   font-family: 'Barlow', sans-serif;
-   background-color: #FAFAFA;
+   /* font-size: 112.5%; /* 18px */
+   font-family: 'HKGrotesk', 'Inter', Helvetica, Arial, sans-serif;
+   background-color: var(--white-2);
    scroll-behavior: smooth;
    overflow-x: hidden;
 }
 
 h1 {
-   font-size: 3em;
-   font-weight: 800; /* ExtraBold */
-   color: #1C1C1C;
+   font-size: 2rem;
+   font-weight: 700; /* Bold */
+   line-height: 120%;
+   color: var(--black-1);
+}
+
+h1.home-title {
+   color: var(--black-3);
+}
+
+h1.home-title span {
+   color: var(--black-1);
 }
 
 h2 {
-   font-size: 2.5em;
-   font-family: 'Barlow Condensed', sans-serif;
-   font-style: italic;
-   font-weight: 500; /* Condensed Medium Italic */
-   color: #1C1C1C;
+   font-size: 1.75rem;
+   font-weight: 700;
+   line-height: 130%;
+   color: var(--black-2);
+}
+
+h2.home-subtitle {
+   margin-top: 40px;
+   color: var(--grey-4);
+   line-height: 150%;
 }
 
 h3 {
-   font-size: 1.5em;
-   font-family: 'Barlow Condensed', sans-serif;
-   font-weight: 400; /* Regular Condensed */
-   color: #1C1C1C;
+   font-size: 1.5rem;
+   font-weight: 700;
+   line-height: 130%;
+   color: var(--black-3);
 }
 
 h4 {
    font-size: 1.25rem;
-   font-family: 'Barlow Condensed', sans-serif;
    font-style: italic;
-   font-weight: 400; /* Condensed Medium Italic */
-   color: #1C1C1C;
-}
-
-p {
-   font-family: 'Lora', Georgia, "Times New Romans", serif;
-   font-size: 1em;
-   line-height: 1.5em;
    font-weight: 400;
-   color: #1C1C1C;
-   opacity: 0.85;
+   line-height: 140%;
+   color: var(--black-2);
 }
 
-p a {
-   text-decoration: underline;
-}
-
-blockquote {
-   font-size: 1.5em;
-   line-height: 1.5em;
-   font-family: 'Barlow Condensed', sans-serif;
-   font-style: italic;
-   text-align: center;
-   font-weight: 500; /* Condensed Medium Italic */
-   color: #1C1C1C;
+ol, ul, li, p, label {
+   font-size: 1rem;
+   line-height: 150%;
+   font-weight: 400;
+   color: var(--black-3);
+   opacity: 0.95;
 }
 
 a {
-   color: #1C1C1C;
+   color: var(--black-1);
+   font-weight: 500;
+   /* text-decoration: underline; */
+}
+
+span.sneaky-note {
+   font-size: 0.625rem;
+   font-weight: 400;
+   line-height: 100%;
+}
+
+ul.list-links {
+   font-size: 1.5rem;
+   line-height: 130%;
+   color: var(--black-1);
+   list-style-type: none;
+}
+
+li.list-link {
+   font-size: 1.5rem;
+   font-weight: 500;
+   margin-bottom: 0.5rem;
+}
+
+blockquote {
+   font-size: 1.5rem;
+   line-height: 2rem;
+   font-weight: 700;
+   text-align: center;
+   color: var(--black-1);
+   padding: 0.75rem 0;
+   border-top: 2px solid var(--grey-1);
+   border-bottom: 2px solid var(--grey-1);
 }
 
 table {
-   font-size: 0.875em;
-   font-family: 'Barlow Condensed', sans-serif;
-   font-weight: 400; /* Regular Condensed */
-   color: #1C1C1C;
+   font-size: 1rem;
+   font-weight: 400;
+   color: var(--black-3);
    text-align: left;
-   border-spacing: 3vmin;
+   border-spacing: 1rem;
    border-collapse: collapse;
    padding: 2px;
-   border: solid 1px #1C1C1C;
+   /* border: solid 1px var(--black-1); */
+   border: none;
 }
 
-table, th, td {
-   padding: 10px;
+table {
+   padding: 1rem 0;
+}
+
+th, td {
+   padding: 1rem;
 }
 
 th {
-   font-weight: normal;
+   font-weight: 600;
 }
 
 table tr:first-child {
-   border-bottom: solid 1px #1C1C1C;
-   margin-bottom: 10vmin;
+   /* border-bottom: solid 1px var(--black-1); */
+   margin-bottom: 1.25rem;
 }
 
-table.project-info {
-   border: none;
-   font-size: 1.25em;
-}
-
-table.project-info tr:first-child {
-   border-bottom: none;
-}
-
-table.project-info tr {
-   padding-top: 10px;
-   padding-bottom: 10px;
-}
-
-table.project-info tr td:first-child {
-   padding-left: 8vmax;
-   text-transform: uppercase;
-   font-weight: 500;
-}
-
-table.project-info td {
-   padding-top: 1.5vmin;
-   padding-bottom: 1.5vmin;
-}
-
-table.project-info tr td:nth-child(2) {
-   padding-left: 4px;
-   font-size: 0.875em;
-}
-
-a#hello-there {
-   color: #1C1C1C;
-}
-
-h1#about-title {
-   font-size: 3em;
-   color: #FAFAFA;
-}
-
-h3#heading-bio {
-   font-size: 1.25em;
-   line-height: 1.25em;
-}
-
-h3.nav-item {
-   font-size: 1.5em;
-   text-align: center;
-   cursor: pointer;
-}
-
-/* h4.case-study-subtitle {
-   color: #1C1C1C;
-} */
-
-.case-study h1 {
-   font-size: 2.25em;
-   text-align: center;
-   color: #FAFAFA;
-}
-
-.case-study h4 {
-   color: #FAFAFA;
-}
-
-.case-study h4.black-mobi {
-   color: #1C1C1C;
-}
-
-p.case-study-tags {
-   font-family: 'Barlow Condensed', sans-serif;
-   font-weight: 400; /* Regular Condensed */
-   color: #FAFAFA;
-}
-
-p.case-study-tags.black-mobi {
-   color: #1C1C1C;
-}
-
-#general-kenobi {
-   opacity: 0;
-   font-weight: 800;
-}
-
-#copyright {
-   font-family: 'Barlow', sans-serif;
+hr {
+   border-top: 2px solid var(--grey-1);
 }
 
 /*===============================================
                Mobile Landscape View
 ===============================================*/
 
-@media screen and (min-width: 568px) and (min-aspect-ratio: 5/4) {
+@media screen and (min-width: 568px) {
 
-   h1 {
-      font-size: 3.5em;
-   }
-
-   table {
-      font-size: 1.125em;
-   }
-
-   h1#about-title {
-      font-size: 3em;
-      color: #1C1C1C;
-   }
-
-   .case-study h1 {
-      font-size: 1.5em;
+   html, body {
+      font-size: 112.5%; /* 18px */
    }
 
 }
@@ -212,183 +167,59 @@ p.case-study-tags.black-mobi {
 ===============================================*/
 
 @media screen and (min-width: 768px) {
-
-   h1 {
-      font-size: 4em;
+   table, th, td {
+      padding: 0.75rem;
    }
-
-   h2 {
-      font-size: 3em;
-   }
-
-   h3 {
-      font-size: 2em;
-   }
-
-   p {
-      font-size: 1.25em;
-   }
-
-   table {
-      font-size: 1.5em;
-      border: solid 2px #1C1C1C;
-   }
-
-   table tr:first-child {
-      border-bottom: solid 2px #1C1C1C;
-   }
-
-   h1#about-title {
-      font-size: 4em;
-      color: #1C1C1C;
-   }
-
-   h3#heading-bio {
-      font-size: 1.375em;
-      line-height: 1.375em;
-   }
-
-   h3.nav-item {
-      font-size: 1.625em;
-   }
-
-   .case-study h1 {
-      font-size: 1.75em;
-   }
-
-}
-
-/*===============================================
-   Long (e.g. iPhone X/XS) Mobile Landscape View
-===============================================*/
-
-@media screen and (min-width: 768px) and (min-aspect-ratio: 5/3) {
-
-   h3#heading-bio {
-      font-size: 1.5em;
-      line-height: 1.5em;
-   }
-
-   h3.nav-item {
-      font-size: 1em;
-   }
-
 }
 
 /*===============================================
             Laptop / Small Desktop View
 ===============================================*/
 
-@media screen and (min-width: 1024px) and (min-aspect-ratio: 5/4) {
+@media screen and (min-width: 1024px) {
 
-   h1#about-title {
-      font-size: 3.125em;
+   html, body {
+      font-size: 125%; /* 20px */
    }
 
-   .case-study h1 {
-      font-size: 2em;
+   table, th, td {
+      padding: 1rem;
    }
 
-   p {
-      font-size: 1em;
+   blockquote {
+      border-top: 3px solid var(--grey-1);
+      border-bottom: 3px solid var(--grey-1);
    }
+
+   hr {
+      border-top: 3px solid var(--grey-1);
+   }
+
 }
 
 /*===============================================
                   Desktop View
 ===============================================*/
 
-@media screen and (min-width: 1344px) and (min-aspect-ratio: 5/4) {
-
-   /*===============================================
-                     Basic Styling
-   ===============================================*/
+@media screen and (min-width: 1440px) {
 
    html, body {
-      font-size: 112.5%; /* 18px */
-   }
-
-   h1 {
-      font-size: 5em;
-   }
-
-   h2 {
-      font-size: 4em;
-   }
-
-   h3 {
-      font-size: 2em;
-   }
-
-   h3.nav-item {
-      font-size: 1.25em;
-   }
-
-   p {
-      font-size: 1em;
-   }
-
-   table {
-      font-size: 1.25em;
-   }
-
-   table.project-info {
-      font-size: 1.75em;
-   }
-
-   table.project-info tr {
-      padding-top: 10px;
-      padding-bottom: 10px;
-   }
-
-   /* table.project-info tr td:nth-child(2) {
-      font-size: 1em;
-   } */
-
-   h1#about-title {
-      font-size: 3.5em;
-   }
-
-   h3#heading-bio {
-      font-size: 1.75em;
-      line-height: 1.5em;
-   }
-
-   .case-study h1 {
-      font-size: 2.5em;
-   }
-
-   p.case-study-tags.black-mobi {
-      color: #FAFAFA;
-   }
-
-   .case-study h4.black-mobi {
-      color: #FAFAFA;
+      font-size: 137.5%; /* 22px - yes, there's a fucking difference between 24px and 23px... */
    }
 
 }
 
-@media screen and (min-width: 1600px) {
+/*===============================================
+                  Big Desktop View
+===============================================*/
 
-   h1#about-title {
-      font-size: 4.5em;
-   }
+@media screen and (min-width: 1800px) {
 
-   h3#heading-bio {
-      font-size: 2em;
-      line-height: 1.5em;
+   html, body {
+      font-size: 143.75%; /* 23px - yes, there's a fucking difference between 24px and 23px... */
    }
 
    p {
-      font-size: 1.125em;
+      line-height: 160%;
    }
-
-   p#about-text, p#copyright {
-      font-size: 1em;
-   }
-
-   table {
-      font-size: 1.5em;
-   }
-
 }
