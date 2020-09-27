@@ -33,16 +33,9 @@ html, body {
 h1 {
    font-size: 2rem;
    font-weight: 700; /* Bold */
-   line-height: 120%;
+   line-height: 130%;
    color: var(--black-1);
-}
-
-h1.home-title {
-   color: var(--black-3);
-}
-
-h1.home-title span {
-   color: var(--black-1);
+   margin: 2rem 0 1rem;
 }
 
 h2 {
@@ -50,12 +43,7 @@ h2 {
    font-weight: 700;
    line-height: 130%;
    color: var(--black-2);
-}
-
-h2.home-subtitle {
-   margin-top: 40px;
-   color: var(--grey-4);
-   line-height: 150%;
+   margin: 1.75rem 0 0.75rem;
 }
 
 h3 {
@@ -63,6 +51,7 @@ h3 {
    font-weight: 700;
    line-height: 130%;
    color: var(--black-3);
+   margin: 1.5rem 0 0.5rem;
 }
 
 h4 {
@@ -71,39 +60,39 @@ h4 {
    font-weight: 400;
    line-height: 140%;
    color: var(--black-2);
+   margin: 1.25rem 0 0.25rem;
 }
 
-ol, ul, li, p, label {
+ol, ul {
    font-size: 1rem;
    line-height: 150%;
-   font-weight: 400;
+   font-weight: 500;
    color: var(--black-3);
-   opacity: 0.95;
+   opacity: 0.99;
+   margin: 1rem 0 0.5rem 3rem;
+}
+
+li {
+   margin: 1rem 0 0.75rem;
+}
+
+p, label {
+   font-size: 1rem;
+   line-height: 150%;
+   font-weight: 500;
+   color: var(--black-3);
+   opacity: 0.99;
+   margin: 1rem 0 0.5rem;
+}
+
+label {
+   margin: 0 0 0.75rem;
 }
 
 a {
    color: var(--black-1);
    font-weight: 500;
    /* text-decoration: underline; */
-}
-
-span.sneaky-note {
-   font-size: 0.625rem;
-   font-weight: 400;
-   line-height: 100%;
-}
-
-ul.list-links {
-   font-size: 1.5rem;
-   line-height: 130%;
-   color: var(--black-1);
-   list-style-type: none;
-}
-
-li.list-link {
-   font-size: 1.5rem;
-   font-weight: 500;
-   margin-bottom: 0.5rem;
 }
 
 blockquote {
@@ -115,11 +104,14 @@ blockquote {
    padding: 0.75rem 0;
    border-top: 2px solid var(--grey-1);
    border-bottom: 2px solid var(--grey-1);
+   margin: 1.5rem 0 1.5rem;
 }
 
 table {
+   max-width: 100%;
    font-size: 1rem;
-   font-weight: 400;
+   font-weight: 500;
+   line-height: 130%;
    color: var(--black-3);
    text-align: left;
    border-spacing: 1rem;
@@ -127,6 +119,7 @@ table {
    padding: 2px;
    /* border: solid 1px var(--black-1); */
    border: none;
+   margin: 1.5rem 0 0.75rem;
 }
 
 table {
@@ -134,7 +127,7 @@ table {
 }
 
 th, td {
-   padding: 1rem;
+   padding: 0.75rem 2rem 0.75rem 0;
 }
 
 th {
@@ -148,7 +141,60 @@ table tr:first-child {
 
 hr {
    border-top: 2px solid var(--grey-1);
+   margin: 1rem 0;
 }
+
+img, video, iframe {
+   margin: 1.5rem 0 1rem;
+}
+
+/*===============================================
+                     Classes
+===============================================*/
+
+h1.home-title {
+   color: var(--black-3);
+   margin: 1rem 0 0;
+}
+
+h1.home-title span {
+   color: var(--black-1);
+}
+
+h2.home-subtitle {
+   color: var(--grey-4);
+   line-height: 150%;
+   margin: 1rem 0 0;
+}
+
+h2.more-cases {
+   margin-bottom: 0.75rem;
+}
+
+span.sneaky-note {
+   font-size: 0.625rem;
+   font-weight: 400;
+   line-height: 100%;
+}
+
+ul.list-links {
+   font-size: 1.5rem;
+   line-height: 130%;
+   color: var(--black-1);
+   list-style-type: none;
+   margin: 0;
+}
+
+li.list-link {
+   font-size: 1.5rem;
+   font-weight: 500;
+   margin: 0 0 0.75rem;
+}
+
+img.with-label {
+   margin: 1rem 0 0.25rem;
+}
+
 
 /*===============================================
                Mobile Landscape View
@@ -167,9 +213,17 @@ hr {
 ===============================================*/
 
 @media screen and (min-width: 768px) {
-   table, th, td {
-      padding: 0.75rem;
+   /* table, th, td {
+      padding: 0.75rem 1rem;
    }
+
+   table {
+      padding: 1rem 0;
+   }
+
+   th, td {
+      padding: 0.75rem 2rem 0.75rem 0;
+   } */
 }
 
 /*===============================================
@@ -182,9 +236,9 @@ hr {
       font-size: 125%; /* 20px */
    }
 
-   table, th, td {
-      padding: 1rem;
-   }
+   /* table, th, td {
+      padding: 1rem 1.25rem;
+   } */
 
    blockquote {
       border-top: 3px solid var(--grey-1);

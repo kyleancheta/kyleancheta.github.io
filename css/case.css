@@ -95,45 +95,45 @@ img {
 .content h1 {
    grid-column: 1 / 2;
    place-self: center start;
-   margin: 24px 0 16px;
+   /* margin: 24px 0 16px; */
 }
 
 .content h2 {
    grid-column: 1 / 2;
    place-self: center start;
-   margin: 20px 0 12px;
+   /* margin: 20px 0 12px; */
 }
 
 .content h3 {
    grid-column: 1 / 2;
    place-self: center start;
-   margin: 16px 0 12px;
+   /* margin: 16px 0 12px; */
+}
+
+.content h3.thank-you {
+   place-self: center center;
 }
 
 .content h4 {
    grid-column: 1 / 2;
    place-self: center start;
-   margin: 12px 0 12px;
+   /* margin: 12px 0 12px; */
 }
 
 .content ul, .content ol {
    grid-column: 1 / 2;
    place-self: center start;
-   margin: 8px 0 8px 40px;
+   /* margin: 8px 0 8px 40px; */
 }
 
 .content ul.list-links {
    margin-left: 0px;
 }
 
-.content ul li, .content ol li {
-   margin: 8px 0;
-}
-
 .content p {
    grid-column: 1 / 2;
    place-self: center start;
-   margin: 16px 0 12px;
+   /* margin: 16px 0 12px; */
 }
 
 .content label {
@@ -145,36 +145,36 @@ img {
 .content table {
    grid-column: 1 / 2;
    place-self: center start;
-   margin: 16px 0 12px;
+   /* margin: 16px 0 12px; */
 }
 
 .content blockquote {
    grid-column: 1 / 2;
    place-self: center center;
-   margin: 20px 0 20px;
+   /* margin: 20px 0 20px; */
 }
 
 .content img {
    grid-column: 1 / 2;
    place-self: center center;
-   margin: 16px 0 12px;
+   /* margin: 16px 0 12px; */
 }
 
 .content img.with-label {
-   margin: 16px 0 4px;
+   /* margin: 16px 0 4px; */
 }
 
-.content video {
+.content video, .content iframe {
    grid-column: 1 / 2;
    place-self: center center;
    max-width: 100%;
-   margin: 16px 0 12px;
+   /* margin: 16px 0 12px; */
 }
 
 .content hr {
    grid-column: 1 / 2;
    /* place-self: center center; */
-   margin: 16px 0 16px;
+   /* margin: 16px 0 16px; */
    /* border-top: 2px solid var(--grey-1); */
 }
 
@@ -189,6 +189,7 @@ img {
 
 @media screen and (min-width: 568px) {
    .content {
+      margin-top: 32px;
       width: calc(100% - 96px);
       padding: 0 48px 0;
    }
@@ -205,7 +206,7 @@ img {
    =======================================================*/
 
    .content {
-      margin-top: 32px;
+      margin-top: 40px;
       width: calc(100% - 64px);
       padding: 0 32px 0;
 
@@ -253,7 +254,7 @@ img {
       grid-column: 2 / 3;
    }
 
-   .content video {
+   .content video, .content iframe {
       grid-column: 2 / 3;
    }
 
@@ -307,36 +308,36 @@ img {
 
    .content h1 {
       grid-column: 2 / 3;
-      margin: 32px 0 20px;
+      /* margin: 32px 0 20px; */
    }
 
    .content h2 {
       grid-column: 2 / 3;
-      margin: 24px 0 16px;
+      /* margin: 24px 0 16px; */
    }
 
    .content h3 {
       grid-column: 2 / 3;
-      margin: 20px 0 16px;
+      /* margin: 20px 0 16px; */
    }
 
    .content h4 {
       grid-column: 2 / 3;
-      margin: 16px 0 16px;
+      /* margin: 16px 0 16px; */
    }
 
    .content ul, .content ol {
       grid-column: 2 / 3;
-      margin: 16px 0 16px 56px;
+      /* margin: 16px 0 16px 56px; */
    }
 
    .content ul li, .content ol li {
-      margin: 16px 0;
+      /* margin: 16px 0; */
    }
 
    .content p {
       grid-column: 2 / 3;
-      margin: 20px 0 16px;
+      /* margin: 20px 0 16px; */
    }
 
    .content label {
@@ -346,26 +347,26 @@ img {
 
    .content table {
       grid-column: 2 / 3;
-      margin: 24px 0 16px;
+      /* margin: 24px 0 16px; */
    }
 
    .content blockquote {
       grid-column: 2 / 3;
-      margin: 32px 0 32px;
+      /* margin: 32px 0 32px; */
    }
 
    .content img {
       grid-column: 2 / 3;
-      margin: 20px 0 16px;
+      /* margin: 20px 0 16px; */
    }
 
    .content img.with-label {
       margin: 20px 0 8px;
    }
 
-   .content video {
+   .content video, .content iframe {
       grid-column: 2 / 3;
-      margin: 20px 0 16px;
+      /* margin: 20px 0 16px; */
    }
 
    .content hr {
@@ -409,6 +410,13 @@ img {
                        Case Study Content
    =======================================================*/
 
+   .content {
+      margin-top: 56px;
+      width: calc(100% - 120px);
+      padding: 0 60px 0;
+      grid-template: auto / 1fr 680px 1fr;
+   }
+
 }
 
 /*=======================================================
@@ -418,19 +426,19 @@ img {
 @media screen and (min-width: 1800px) {
 
    .content {
-      margin-top: 56px;
+      margin-top: 64px;
       width: calc(100% - 120px);
       padding: 0 60px 0;
-      grid-template: auto / 1fr 800px 1fr;
+      grid-template: auto / 1fr 720px 1fr;
    }
 
    .content table {
-      margin: 32px 0 32px;
+      /* margin: 32px 0 32px; */
    }
 
    .content ul, .content ol {
       grid-column: 2 / 3;
-      margin: 16px 0 16px 72px;
+      /* margin: 16px 0 16px 72px; */
    }
 
 }
