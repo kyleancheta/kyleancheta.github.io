@@ -21,10 +21,11 @@ img {
 
 .cs-close {
    z-index: 3;
+   box-sizing: border-box;
    width: 32px;
    height: 32px;
    background: var(--white-2) url("../img/icon/close-icon.png") center/cover no-repeat;
-   border-radius: 16px;
+   border-radius: 50%;
    box-shadow: 0 0 4px rgba(28, 28, 28, 0.35);
 
    position: fixed;
@@ -39,18 +40,24 @@ img {
    transform: scale(1.05);
 }
 
-.cs-close:active {
+.cs-close:focus {
+   border: 4px solid var(--blue-200);
+   padding: 0;
+}
+
+/* .cs-close:active {
    box-shadow: 0 0 6px rgba(28, 28, 28, 0.35);
    transition: box-shadow 0.25s;
-}
+} */
 
 
 .cs-up {
    z-index: 3;
+   box-sizing: border-box;
    width: 32px;
    height: 32px;
    background: var(--white-2) url("../img/icon/up-icon.png") center/cover no-repeat;
-   border-radius: 16px;
+   border-radius: 50%;
    box-shadow: 0 0 4px rgba(28, 28, 28, 0.35);
 
    position: fixed;
@@ -67,13 +74,14 @@ img {
    transform: scale(1.05);
 }
 
-.cs-up:active {
-   box-shadow: 0 0 6px rgba(28, 28, 28, 0.35);
-   transition: box-shadow 0.25s;
+.cs-up:focus {
+   border: 4px solid var(--blue-200);
+   padding: 0;
 }
 
-/* .cs-close:focus, .cs-up:focus {
-   box-shadow: 0 2px 4px rgba(168, 198, 240, 0.55);
+/* .cs-up:active {
+   box-shadow: 0 0 6px rgba(28, 28, 28, 0.35);
+   transition: box-shadow 0.25s;
 } */
 
 /*=======================================================
@@ -277,7 +285,7 @@ img {
    .cs-close {
       width: 40px;
       height: 40px;
-      border-radius: 20px;
+      border-radius: 50%;
 
       top: 32px;
       right: 32px;
@@ -286,7 +294,7 @@ img {
    .cs-up {
       width: 40px;
       height: 40px;
-      border-radius: 20px;
+      /* border-radius: 20px; */
 
       bottom: 32px;
       right: 32px;
@@ -391,7 +399,7 @@ img {
    .cs-close {
       width: 48px;
       height: 48px;
-      border-radius: 24px;
+      border-radius: 50%;
 
       top: 40px;
       right: 40px;
@@ -400,7 +408,7 @@ img {
    .cs-up {
       width: 48px;
       height: 48px;
-      border-radius: 24px;
+      /* border-radius: 24px; */
 
       bottom: 40px;
       right: 40px;
