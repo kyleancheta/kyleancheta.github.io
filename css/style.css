@@ -42,7 +42,7 @@ h2 {
    font-size: 1.75rem;
    font-weight: 700;
    line-height: 130%;
-   color: var(--black-2);
+   color: var(--black-1);
    margin: 1.75rem 0 0.75rem;
 }
 
@@ -83,6 +83,10 @@ p, label {
    color: var(--black-3);
    opacity: 0.99;
    margin: 1rem 0 0.5rem;
+}
+
+h1 + p, h2 + p, h3 + p, h4 + p {
+   margin-top: 0;
 }
 
 label {
@@ -177,6 +181,10 @@ span.sneaky-note {
    line-height: 100%;
 }
 
+ul.no-bullets {
+   list-style-type: none;
+}
+
 ul.list-links {
    font-size: 1.5rem;
    line-height: 130%;
@@ -191,8 +199,8 @@ li.list-link {
    margin: 0 0 0.75rem;
 }
 
-img.with-label {
-   margin: 1rem 0 0.25rem;
+img.with-label, video.with-label {
+   margin: 1rem 0 0.1rem;
 }
 
 
