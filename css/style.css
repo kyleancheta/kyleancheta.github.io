@@ -22,8 +22,8 @@
 }
 
 html, body {
-   font-size: 100%; /* 16px */
-   /* font-size: 112.5%; /* 18px */
+   /* font-size: 100%; /* 16px */
+   font-size: 125%; /* 18px */
    font-family: 'HKGrotesk', 'Inter', Helvetica, Arial, sans-serif;
    background-color: var(--white-2);
    scroll-behavior: smooth;
@@ -210,9 +210,9 @@ img.with-label, video.with-label {
 
 @media screen and (min-width: 568px) {
 
-   html, body {
-      font-size: 112.5%; /* 18px */
-   }
+   /* html, body {
+      font-size: 112.5%;
+   } */
 
 }
 
@@ -266,7 +266,7 @@ img.with-label, video.with-label {
 @media screen and (min-width: 1440px) {
 
    html, body {
-      font-size: 137.5%; /* 22px - yes, there's a fucking difference between 24px and 23px... */
+      font-size: 137.5%; /* 22px */
    }
 
 }

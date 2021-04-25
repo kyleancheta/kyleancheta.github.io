@@ -96,7 +96,7 @@ img {
 
    display: grid;
    grid-gap: 8px;
-   grid-template: auto / 32px 1fr 32px;
+   grid-template: auto / 24px 1fr 24px;
 }
 
 .content h1, .content h2, .content h3, .content h4, .content ul, .content ol,
@@ -105,6 +105,7 @@ img {
 {
    grid-column: 2 / 3;
    place-self: center center;
+   width: 100%;
 }
 
 .content h1, .content h3.thank-you {
@@ -165,8 +166,10 @@ img {
    =======================================================*/
 
    .content {
-
-      /* grid-template: auto / 1fr auto 1fr; */
+      /* margin-top: 40px;
+      width: calc(100% - 64px);
+      padding: 0 32px 0;
+      grid-template: auto / 1fr auto 1fr; */
    }
 
    .content h1, .content h2, .content h3, .content h4, .content ul, .content ol,
@@ -219,6 +222,7 @@ img {
       width: calc(100% - 80px);
       padding: 0 40px 0;
       grid-gap: 16px;
+      grid-template: auto / 1fr auto 1fr;
    }
 
    .content label {
