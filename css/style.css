@@ -85,12 +85,18 @@ p, label {
    margin: 1rem 0 0.5rem;
 }
 
-h1 + p, h2 + p, h3 + p, h4 + p {
+h1 + p, h2 + p, h3 + p, h4 + p,
+h1 + ol, h2 + ol, h3 + ol, h4 + ol,
+h1 + ul, h2 + ul, h3 + ul, h4 + ul,
+h1 + table, h2 + table, h3 + table, h4 + table,
+h2 + h3, h3 + h4
+{
    margin-top: 0;
 }
 
 label {
    margin: 0 0 0.75rem;
+   font-weight: 300;
 }
 
 a {
@@ -150,6 +156,10 @@ hr {
 
 img, video, iframe {
    margin: 1.5rem 0 1rem;
+}
+
+strong {
+   font-weight: 700;
 }
 
 /*===============================================
